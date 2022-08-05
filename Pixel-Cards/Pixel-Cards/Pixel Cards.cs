@@ -13,7 +13,7 @@ namespace PixelCards
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch",
    BepInDependency.DependencyFlags.HardDependency)]
     // Declares our mod to Bepin
-    [BepInPlugin(ModId, PixelCards, Version)]
+    [BepInPlugin(com.test.pixel_cards, PixelCards, Version)]
     // The game our mod is associated with
     [BepInProcess("Rounds.exe")]
     public class PixelCards : BaseUnityPlugin
