@@ -19,7 +19,7 @@ namespace PixelCards
     public class PixelCards : BaseUnityPlugin
     {
         private const string Modid = "com.My.Mod.Id";
-        private const string PixelCards = "PixelCards";
+        private const string ModName = "PixelCards";
         public const string Version = "0.0.1"; // What version are we on (major.minor.patch)?
 
         void Awake()
