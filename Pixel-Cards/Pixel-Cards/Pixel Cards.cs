@@ -40,6 +40,7 @@ namespace PixelCards
         {
             instance = this;
             CustomCard.BuildCard<EvasiveManeuvers>();
+            CustomCard.BuildCard<Test>();
         }
     }
 }

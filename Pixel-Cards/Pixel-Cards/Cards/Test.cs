@@ -9,22 +9,20 @@ using UnityEngine;
 
 namespace PixelCards.Cards
 {
-    class EvasiveManeuvers : CustomCard
+    class Test : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             UnityEngine.Debug.Log($"[{PixelCards.ModInitials}][Card] {GetTitle()} has been setup.");
-            statModifiers.health = 1.2f;
-            block.cdAdd = 0.25f;
-            block.forceToAdd = -10f;
+            block.healing = 20.0f;
+            
 
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
             UnityEngine.Debug.Log($"[{PixelCards.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
-
 
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -36,11 +34,11 @@ namespace PixelCards.Cards
 
         protected override string GetTitle()
         {
-            return "Evasive Maneuvers";
+            return "Test";
         }
         protected override string GetDescription()
         {
-            return "Jumps backwards whenever you block";
+            return "Test Something Out!";
         }
         protected override GameObject GetCardArt()
         {
@@ -57,15 +55,8 @@ namespace PixelCards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Health",
-                    amount = "+20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                 new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Block Cooldown",
-                    amount = "+0.25",
+                    stat = "¯_(ツ)_/¯ ",
+                    amount = "No",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
