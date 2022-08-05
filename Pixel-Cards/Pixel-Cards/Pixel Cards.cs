@@ -20,7 +20,7 @@ namespace PixelCards
     {
         private const string Modid = "com.Pixel.Mod.Id";
         private const string ModName = "PixelCards";
-        public const string Version = "0.0.1"; // What version are we on (major.minor.patch)?
+        public const string Version = "1.0.0"; // What version are we on (major.minor.patch)?
 
         void Awake()
         {
