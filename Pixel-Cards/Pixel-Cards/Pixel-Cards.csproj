@@ -8,28 +8,28 @@
 
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\OneDrive\Desktop\Dependencies\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\OneDrive\Desktop\Dependencies\Assembly-CSharp.dll</HintPath>
+      <HintPath>C:\Users\plani\Downloads\Pixel-Card-Dll's\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>..\..\..\..\..\..\OneDrive\Desktop\Dependencies\BepInEx.dll</HintPath>
+      <HintPath>C:\Users\plani\Downloads\Pixel-Card-Dll's\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="CardChoiceSpawnUniqueCardPatch">
-      <HintPath>..\..\..\..\..\..\OneDrive\Desktop\Dependencies\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
+      <HintPath>C:\Users\plani\Downloads\Pixel-Card-Dll's\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
+    </Reference>
+    <Reference Include="MMHOOK_Assembly-CSharp">
+      <HintPath>C:\Users\plani\Downloads\Pixel-Card-Dll's\MMHOOK_Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="ModdingUtils">
-      <HintPath>..\..\..\..\..\..\OneDrive\Desktop\Dependencies\ModdingUtils.dll</HintPath>
+      <HintPath>C:\Users\plani\Downloads\Pixel-Card-Dll's\ModdingUtils.dll</HintPath>
     </Reference>
     <Reference Include="UnboundLib">
-      <HintPath>..\..\..\..\..\..\OneDrive\Desktop\Dependencies\UnboundLib.dll</HintPath>
+      <HintPath>C:\Users\plani\Downloads\Pixel-Card-Dll's\UnboundLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\OneDrive\Desktop\Dependencies\UnityEngine.dll</HintPath>
+      <HintPath>C:\Users\plani\Downloads\Pixel-Card-Dll's\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\..\OneDrive\Desktop\Dependencies\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>C:\Users\plani\Downloads\Pixel-Card-Dll's\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 
