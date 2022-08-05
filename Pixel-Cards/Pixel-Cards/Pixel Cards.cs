@@ -13,7 +13,7 @@ namespace PixelCards
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch",
    BepInDependency.DependencyFlags.HardDependency)]
     // Declares our mod to Bepin
-    [BepInPlugin("GuardandRat.Rounds.PixelCards", PixelCards, 1.0.0)]
+    [BepInPlugin(Modid, ModName, Version)]
     // The game our mod is associated with
     [BepInProcess("Rounds.exe")]
     public class PixelCards : BaseUnityPlugin
@@ -21,7 +21,7 @@ namespace PixelCards
         private const string Modid = "com.GuardandRat.Rounds.PixelCards";
         private const string ModName = "PixelCards";
         public const string Version = "1.0.0"; // What version are we on (major.minor.patch)?
-        public const string ModInitials = "Px";
+        public const string ModInitials = "PX";
         public static PixelCards instance { get; private set; }
         instance = this;
 
