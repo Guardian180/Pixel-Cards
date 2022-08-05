@@ -22,8 +22,8 @@ namespace PixelCards
         private const string ModName = "PixelCards";
         public const string Version = "1.0.0"; // What version are we on (major.minor.patch)?
         public const string ModInitials = "PX";
-        public static PixelCards instance { get; private set; }
-        instance = this;
+        public static PixelCards instance {get; private set;}
+        
 
       
 
@@ -38,7 +38,8 @@ namespace PixelCards
         }
         void Start()
         {
-            CustomCard.BuildCard<MEME>();
+            instance = this;
+            CustomCard.BuildCard<EvasiveManeuvers>();
         }
     }
 }
