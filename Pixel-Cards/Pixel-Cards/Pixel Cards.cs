@@ -18,7 +18,7 @@ namespace PixelCards
     [BepInProcess("Rounds.exe")]
     public class PixelCards : BaseUnityPlugin
     {
-        private const string Modid = "com.Pixel.Mod.Id";
+        private const string Modid = "com.GuardandRat.Rounds.PixelCards";
         private const string ModName = "PixelCards";
         public const string Version = "1.0.0"; // What version are we on (major.minor.patch)?
 
