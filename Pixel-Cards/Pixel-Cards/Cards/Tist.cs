@@ -6,23 +6,25 @@ using System.Threading.Tasks;
 using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
+using PixelCards.MonoBehaviours;
+using ModdingUtils.MonoBehaviours;
 
 namespace PixelCards.Cards
 {
-    class SuccShield : CustomCard
+    class Tist : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             UnityEngine.Debug.Log($"[{PixelCards.ModInitials}][Card] {GetTitle()} has been setup.");
-            cardInfo.allowMultiple = false;
             
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
             UnityEngine.Debug.Log($"[{PixelCards.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
-
+            characterStats.objectsAddedToPlayer.Add(this.gameobj);
+            player.gameObject.AddComponent<Succ>();
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -33,11 +35,11 @@ namespace PixelCards.Cards
 
         protected override string GetTitle()
         {
-            return "SUCC Shield";
+            return "Tist";
         }
         protected override string GetDescription()
         {
-            return "SUCC the life out of people!";
+            return "CardDescriptisdadon";
         }
         protected override GameObject GetCardArt()
         {
@@ -54,8 +56,8 @@ namespace PixelCards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "SUCC",
-                    amount = "Gain a bit of",
+                    stat = "Effect",
+                    amount = "No",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -68,6 +70,7 @@ namespace PixelCards.Cards
         {
             return PixelCards.ModInitials;
         }
+        private GameObject gameobj;
     }
 }
 

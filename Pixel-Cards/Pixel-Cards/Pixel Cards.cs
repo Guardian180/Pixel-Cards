@@ -3,6 +3,7 @@ using UnboundLib;
 using UnboundLib.Cards;
 using PixelCards.Cards;
 using HarmonyLib;
+using PixelCards.MonoBehaviours;
 using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 
 namespace PixelCards
@@ -41,6 +42,8 @@ namespace PixelCards
             instance = this;
             CustomCard.BuildCard<EvasiveManeuvers>();
             CustomCard.BuildCard<Test>();
+            CustomCard.BuildCard<SuccShield>();
+            CustomCard.BuildCard<Tist>();
         }
     }
 }
